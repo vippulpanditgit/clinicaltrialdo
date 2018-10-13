@@ -24,4 +24,10 @@ public class CTLinksDO extends CTBaseDO {
 		map.put(DESCRIPTION, description);
 		return map;
 	}
+	public void deAttributeMap(Map<String, Object> map) {
+		super.deAttributeMap(map);
+		url = (String)map.get(URL);
+		description = (String)map.get(DESCRIPTION);
+	}
+
 }

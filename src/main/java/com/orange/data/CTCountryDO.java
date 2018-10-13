@@ -2,6 +2,8 @@ package com.orange.data;
 
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class CTCountryDO extends CTBaseDO {
 	public String NAME="name";
 	public String IS_REMOVED = "isRemoved";
@@ -24,4 +26,10 @@ public class CTCountryDO extends CTBaseDO {
 		map.put(IS_REMOVED, isRemoved?"true":"false");
 		return map;
 	}
+	public void deAttributeMap(Map<String, Object> map) {
+		super.deAttributeMap(map);
+		name = (String)map.get(NAME);
+		isRemoved = StringUtils.equalsAnyIgnoreCase((String)map.get(IS_REMOVED),"true")?true:false;
+	}
+
 }

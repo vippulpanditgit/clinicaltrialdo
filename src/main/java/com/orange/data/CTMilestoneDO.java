@@ -44,5 +44,15 @@ public class CTMilestoneDO extends CTBaseDO {
 		map.put(DESCRIPTION, description);
 		return map;
 	}
+	public void deAttributeMap(Map<String, Object> map) {
+		super.deAttributeMap(map);
+		this.result_group_id = (String)map.get(RESULT_GROUP_ID);
+		this.ctgov_group_code = (String)map.get(CTGOV_GROUP_CODE);
+		this.title = (String)map.get(TITLE);
+		this.period = (String)map.get(PERIOD);
+		this.count = (String)map.get(COUNT);
+		this.description = (String)map.get(DESCRIPTION);
+	}
+
 
 }

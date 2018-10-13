@@ -19,4 +19,9 @@ public class CTBriefSummaryDO extends CTBaseDO {
 		map.put(BRIEF_DECRIPTION, briefDescription);
 		return map;
 	}
+	public void deAttributeMap(Map<String, Object> map) {
+		super.deAttributeMap(map);
+		briefDescription = (String)map.get(BRIEF_DECRIPTION);
+	}
+
 }

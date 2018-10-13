@@ -24,4 +24,10 @@ public class CTKeywordDO extends CTBaseDO {
 		map.put(DOWNCASE_NAME, downcase_name);
 		return map;
 	}
+	public void deAttributeMap(Map<String, Object> map) {
+		super.deAttributeMap(map);
+		name = (String)map.get(NAME);
+		downcase_name = (String)map.get(DOWNCASE_NAME);
+	}
+
 }

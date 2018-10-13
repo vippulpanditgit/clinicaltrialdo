@@ -19,4 +19,9 @@ public class CTDetailDescriptionDO extends CTBaseDO {
 		map.put(DESCRIPTION, description);
 		return map;
 	}
+	public void deAttributeMap(Map<String, Object> map) {
+		super.deAttributeMap(map);
+		description = (String)map.get(DESCRIPTION);
+	}
+
 }

@@ -27,6 +27,10 @@ public abstract class CTBaseDO {
 		map.put(NCT_ID, nct_Id);
 		return map;
 	}
+	public void deAttributeMap(Map<String, Object> map) {
+		id = (String)map.get(ID);
+		nct_Id = (String)map.get(NCT_ID);
+	}
 	
 	protected String sanatize(String sentence) {
 		if(sentence==null||sentence.length()==0)
