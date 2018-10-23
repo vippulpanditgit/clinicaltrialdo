@@ -18,6 +18,9 @@ public class CTConditionDO extends CTBaseDO {
 		if(data.length>3)
 			downcase_name = data[3];
 	}
+	public void deserialize(String[] data, boolean isExtendeFileFormat) {
+		this.deserialize(data);
+	}
 	public Map<String, Object> attributeMap() {
 		Map<String, Object> map = super.attributeMap();
 		map.put(NAME, name);

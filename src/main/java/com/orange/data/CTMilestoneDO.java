@@ -34,6 +34,10 @@ public class CTMilestoneDO extends CTBaseDO {
 		if(data.length>7)
 			count = data[7];
 	}
+	public void deserialize(String[] data, boolean isExtendeFileFormat) {
+		this.deserialize(data);
+	}
+
 	public Map<String, Object> attributeMap() {
 		Map<String, Object> map = super.attributeMap();
 		map.put(RESULT_GROUP_ID, result_group_id);

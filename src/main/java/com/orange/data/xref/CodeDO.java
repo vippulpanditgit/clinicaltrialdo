@@ -1,4 +1,4 @@
-package com.orange.data;
+package com.orange.data.xref;
 
 public class CodeDO {
 	

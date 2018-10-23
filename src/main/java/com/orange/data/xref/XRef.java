@@ -1,11 +1,11 @@
-package com.orange.data;
+package com.orange.data.xref;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.orange.ct.aws.conf.AppModuleConfiguration;
+import com.orange.ct.app.conf.AppModuleConfiguration;
 
 public class XRef {
 	public enum XRefType {

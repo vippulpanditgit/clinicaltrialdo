@@ -5,69 +5,69 @@ import java.util.Map;
 import com.orange.data.util.AWSFormatUtil;
 
 public class CTStudiesDO extends CTBaseDO {
-	public String NLM_DOWNLOAD_DATE_DESCRIPTION  = "nlm_download_date_description";
-	public String STUDY_FIRST_SUBMITTED_DATE  = "study_first_submitted_date";
-	public String RESULTS_FIRST_SUBMITTED_DATE  = "results_first_submitted_date";
-	public String DISPOSITION_FIRST_SUBMITTED_DATE  = "disposition_first_submitted_date";
-	public String LAST_UPDATE_SUBMITTED_DATE  = "last_update_submitted_date";
-	public String STUDY_FIRST_SUBMITTED_QC_DATE  = "study_first_submitted_qc_date";
-	public String STUDY_FIRST_POSTED_DATE  = "study_first_posted_date";
-	public String STUDY_FIRST_POSTED_DATE_TYPE  = "study_first_posted_date_type";
-	public String RESULTS_FIRST_SUBMITTED_QC_DATE  = "results_first_submitted_qc_date";
-	public String RESULTS_FIRST_POSTED_DATE  = "results_first_posted_date";
-	public String RESULTS_FIRST_POSTED_DATE_TYPE  = "results_first_posted_date_type";
-	public String DISPOSITION_FIRST_SUBMITTED_QC_DATE  = "disposition_first_submitted_qc_date";
-	public String DISPOSITION_FIRST_POSTED_DATE  = "disposition_first_posted_date";
-	public String DISPOSITION_FIRST_POSTED_DATE_TYPE  = "disposition_first_posted_date_type";
-	public String LAST_UPDATE_SUBMITTED_QC_DATE  = "last_update_submitted_qc_date";
-	public String LAST_UPDATE_POSTED_DATE  = "last_update_posted_date";
-	public String LAST_UPDATE_POSTED_DATE_TYPE  = "last_update_posted_date_type";
-	public String START_MONTH_YEAR  = "start_month_year";
-	public String START_DATE_TYPE  = "start_date_type";
-	public String START_DATE  = "start_date";
-	public String VERIFICATION_MONTH_YEAR  = "verification_month_year";
-	public String VERIFICATION_DATE  = "verification_date";
-	public String COMPLETION_MONTH_YEAR  = "completion_month_year";
-	public String COMPLETION_DATE_TYPE  = "completion_date_type";
-	public String COMPLETION_DATE  = "completion_date";
-	public String PRIMARY_COMPLETION_MONTH_YEAR  = "primary_completion_month_year";
-	public String PRIMARY_COMPLETION_DATE_TYPE  = "primary_completion_date_type";
-	public String PRIMARY_COMPLETION_DATE  = "primary_completion_date";
-	public String TARGET_DURATION  = "target_duration";
-	public String STUDY_TYPE  = "study_type";
-	public String ACRONYM  = "acronym";
-	public String BASELINE_POPULATION  = "baseline_population";
-	public String BRIEF_TITLE  = "brief_title";
-	public String OFFICIAL_TITLE  = "official_title";
-	public String OVERALL_STATUS = "overall_status";
-	public String LAST_KNOWN_STATUS  = "last_known_status";
-	public String PHASE  = "phase";
-	public String ENROLLMENT  = "enrollment";
-	public String ENROLLMENT_TYPE  = "enrollment_type";
-	public String SOURCE  = "source";
-	public String LIMITATIONS_AND_CAVEATS  = "limitations_and_caveats";
-	public String NUMBER_OF_ARMS  = "number_of_arms";
-	public String NUMBER_OF_GROUPS  = "number_of_groups";
-	public String WHY_STOPPED  = "why_stopped";
-	public String HAS_EXPANDED_ACCESS  = "has_expanded_access";
-	public String EXPANDED_ACCESS_TYPE_INDIVIDUAL  = "expanded_access_type_individual";
-	public String EXPANDED_ACCESS_TYPE_INTERMEDIATE  = "expanded_access_type_intermediate";
-	public String EXPANDED_ACCESS_TYPE_TREATMENT  = "expanded_access_type_treatment";
-	public String HAS_DMC  = "has_dmc";
-	public String IS_FDA_REGULATED_DRUG  = "is_fda_regulated_drug";
-	public String IS_FDA_REGULATED_DEVICE  = "is_fda_regulated_device";
-	public String IS_UNAPPROVED_DEVICE  = "is_unapproved_device";
-	public String IS_PPSD  = "is_ppsd";
-	public String IS_US_EXPORT  = "is_us_export";
-	public String BIOSPEC_RETENTION  = "biospec_retention";
-	public String BIOSPEC_DESCRIPTION  = "biospec_description";
-	public String IPD_TIME_FRAME  = "ipd_time_frame";
-	public String IPD_ACCESS_CRITERIA  = "ipd_access_criteria";
-	public String IPD_URL  = "ipd_url";
-	public String PLAN_TO_SHARE_IPD  = "plan_to_share_ipd";
-	public String PLAN_TO_SHARE_IPD_DESCRIPTION  = "plan_to_share_ipd_description";
-	public String CREATED_AT  = "created_at";
-	public String UPDATED_AT  = "updated_at";
+	public static final  String NLM_DOWNLOAD_DATE_DESCRIPTION  = "nlm_download_date_description";
+	public static final  String STUDY_FIRST_SUBMITTED_DATE  = "study_first_submitted_date";
+	public static final  String RESULTS_FIRST_SUBMITTED_DATE  = "results_first_submitted_date";
+	public static final  String DISPOSITION_FIRST_SUBMITTED_DATE  = "disposition_first_submitted_date";
+	public static final  String LAST_UPDATE_SUBMITTED_DATE  = "last_update_submitted_date";
+	public static final  String STUDY_FIRST_SUBMITTED_QC_DATE  = "study_first_submitted_qc_date";
+	public static final  String STUDY_FIRST_POSTED_DATE  = "study_first_posted_date";
+	public static final  String STUDY_FIRST_POSTED_DATE_TYPE  = "study_first_posted_date_type";
+	public static final  String RESULTS_FIRST_SUBMITTED_QC_DATE  = "results_first_submitted_qc_date";
+	public static final  String RESULTS_FIRST_POSTED_DATE  = "results_first_posted_date";
+	public static final  String RESULTS_FIRST_POSTED_DATE_TYPE  = "results_first_posted_date_type";
+	public static final  String DISPOSITION_FIRST_SUBMITTED_QC_DATE  = "disposition_first_submitted_qc_date";
+	public static final  String DISPOSITION_FIRST_POSTED_DATE  = "disposition_first_posted_date";
+	public static final  String DISPOSITION_FIRST_POSTED_DATE_TYPE  = "disposition_first_posted_date_type";
+	public static final  String LAST_UPDATE_SUBMITTED_QC_DATE  = "last_update_submitted_qc_date";
+	public static final  String LAST_UPDATE_POSTED_DATE  = "last_update_posted_date";
+	public static final  String LAST_UPDATE_POSTED_DATE_TYPE  = "last_update_posted_date_type";
+	public static final  String START_MONTH_YEAR  = "start_month_year";
+	public static final  String START_DATE_TYPE  = "start_date_type";
+	public static final  String START_DATE  = "start_date";
+	public static final  String VERIFICATION_MONTH_YEAR  = "verification_month_year";
+	public static final  String VERIFICATION_DATE  = "verification_date";
+	public static final  String COMPLETION_MONTH_YEAR  = "completion_month_year";
+	public static final  String COMPLETION_DATE_TYPE  = "completion_date_type";
+	public static final  String COMPLETION_DATE  = "completion_date";
+	public static final  String PRIMARY_COMPLETION_MONTH_YEAR  = "primary_completion_month_year";
+	public static final  String PRIMARY_COMPLETION_DATE_TYPE  = "primary_completion_date_type";
+	public static final  String PRIMARY_COMPLETION_DATE  = "primary_completion_date";
+	public static final  String TARGET_DURATION  = "target_duration";
+	public static final  String STUDY_TYPE  = "study_type";
+	public static final  String ACRONYM  = "acronym";
+	public static final  String BASELINE_POPULATION  = "baseline_population";
+	public static final  String BRIEF_TITLE  = "brief_title";
+	public static final  String OFFICIAL_TITLE  = "official_title";
+	public static final  String OVERALL_STATUS = "overall_status";
+	public static final  String LAST_KNOWN_STATUS  = "last_known_status";
+	public static final  String PHASE  = "phase";
+	public static final  String ENROLLMENT  = "enrollment";
+	public static final  String ENROLLMENT_TYPE  = "enrollment_type";
+	public static final  String SOURCE  = "source";
+	public static final  String LIMITATIONS_AND_CAVEATS  = "limitations_and_caveats";
+	public static final  String NUMBER_OF_ARMS  = "number_of_arms";
+	public static final  String NUMBER_OF_GROUPS  = "number_of_groups";
+	public static final  String WHY_STOPPED  = "why_stopped";
+	public static final  String HAS_EXPANDED_ACCESS  = "has_expanded_access";
+	public static final  String EXPANDED_ACCESS_TYPE_INDIVIDUAL  = "expanded_access_type_individual";
+	public static final  String EXPANDED_ACCESS_TYPE_INTERMEDIATE  = "expanded_access_type_intermediate";
+	public static final  String EXPANDED_ACCESS_TYPE_TREATMENT  = "expanded_access_type_treatment";
+	public static final  String HAS_DMC  = "has_dmc";
+	public static final  String IS_FDA_REGULATED_DRUG  = "is_fda_regulated_drug";
+	public static final  String IS_FDA_REGULATED_DEVICE  = "is_fda_regulated_device";
+	public static final  String IS_UNAPPROVED_DEVICE  = "is_unapproved_device";
+	public static final  String IS_PPSD  = "is_ppsd";
+	public static final  String IS_US_EXPORT  = "is_us_export";
+	public static final  String BIOSPEC_RETENTION  = "biospec_retention";
+	public static final  String BIOSPEC_DESCRIPTION  = "biospec_description";
+	public static final  String IPD_TIME_FRAME  = "ipd_time_frame";
+	public static final  String IPD_ACCESS_CRITERIA  = "ipd_access_criteria";
+	public static final  String IPD_URL  = "ipd_url";
+	public static final  String PLAN_TO_SHARE_IPD  = "plan_to_share_ipd";
+	public static final  String PLAN_TO_SHARE_IPD_DESCRIPTION  = "plan_to_share_ipd_description";
+	public static final  String CREATED_AT  = "created_at";
+	public static final  String UPDATED_AT  = "updated_at";
 
 
 	public String nlm_download_date_description;
@@ -133,12 +133,6 @@ public class CTStudiesDO extends CTBaseDO {
 	public String plan_to_share_ipd_description;
 	public String created_at;
 	public String updated_at;
-	private String nullable(String value) {
-		if(value==null||value.length()==0)
-			return null;
-		return value;
-	}
-	@Override
 	public void deserialize(String[] data) {
 		id= "1";
 		if(data.length>0)
@@ -271,6 +265,10 @@ public class CTStudiesDO extends CTBaseDO {
 			updated_at = nullable(data[63]);
 			
 	}
+	public void deserialize(String[] data, boolean isExtendeFileFormat) {
+		this.deserialize(data);
+	}
+
 	public Map<String, Object> attributeMap() {
 		Map<String, Object> map = super.attributeMap();
 		map.put(NLM_DOWNLOAD_DATE_DESCRIPTION, nlm_download_date_description);
@@ -339,7 +337,7 @@ public class CTStudiesDO extends CTBaseDO {
 		return map;
 	}
 	public void deAttributeMap(Map<String, Object> map) {
-		super.deAttributeMap(map);
+//		super.deAttributeMap(map);
 		nlm_download_date_description=(String)map.get(NLM_DOWNLOAD_DATE_DESCRIPTION);
 		study_first_submitted_date=(String)map.get(STUDY_FIRST_SUBMITTED_DATE);
 		results_first_submitted_date=(String)map.get(RESULTS_FIRST_SUBMITTED_DATE);
