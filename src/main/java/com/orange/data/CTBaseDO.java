@@ -36,6 +36,7 @@ public abstract class CTBaseDO {
 		id = (String)map.get(ID);
 		nct_Id = (String)map.get(NCT_ID);
 	}
+
 	private static String[] SENTENCE_STARTS_WITH = {
 			"[0-9]+[\\.\\)]",
 			"M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})[\\.\\)]",
