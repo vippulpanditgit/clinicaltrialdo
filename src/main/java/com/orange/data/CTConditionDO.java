@@ -3,8 +3,8 @@ package com.orange.data;
 import java.util.Map;
 
 public class CTConditionDO extends CTBaseDO {
-	public String NAME= "name";
-	public String DOWNCASE_NAME = "downcase_name";
+	public static final String NAME= "name";
+	public static final String DOWNCASE_NAME = "downcase_name";
 	public String name;
 	public String downcase_name;
 

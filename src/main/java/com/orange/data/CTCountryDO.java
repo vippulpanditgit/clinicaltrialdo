@@ -5,10 +5,13 @@ import java.util.Map;
 import org.apache.commons.lang3.StringUtils;
 
 public class CTCountryDO extends CTBaseDO {
-	public String NAME="name";
-	public String IS_REMOVED = "isRemoved";
+	public static final String NAME="name";
+	public static final String IS_REMOVED = "isRemoved";
 	public String name;
 	public boolean isRemoved;
+	
+	public int count;
+	public String status;
 	
 	public void deserialize(String[] data) {
 		if(data.length>0)

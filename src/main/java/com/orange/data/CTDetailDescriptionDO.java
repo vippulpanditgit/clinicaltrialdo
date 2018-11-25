@@ -3,7 +3,7 @@ package com.orange.data;
 import java.util.Map;
 
 public class CTDetailDescriptionDO extends CTBaseDO {
-	public String DESCRIPTION = "DESCRIPTION";
+	public static final String DESCRIPTION = "DESCRIPTION";
 	public String description;
 	
 	public void deserialize(String[] data) {

@@ -3,12 +3,12 @@ package com.orange.data;
 import java.util.Map;
 
 public class CTMilestoneDO extends CTBaseDO {
-	public String RESULT_GROUP_ID = "result_group_id";
-	public String CTGOV_GROUP_CODE = "ctgov_group_code";
-	public String TITLE = "title";
-	public String PERIOD="period";
-	public String DESCRIPTION="description";
-	public String COUNT="count";
+	public static final String RESULT_GROUP_ID = "result_group_id";
+	public static final String CTGOV_GROUP_CODE = "ctgov_group_code";
+	public static final String TITLE = "title";
+	public static final String PERIOD="period";
+	public static final String DESCRIPTION="description";
+	public static final String COUNT="count";
 	public String result_group_id;
 	public String ctgov_group_code;
 	public String title;

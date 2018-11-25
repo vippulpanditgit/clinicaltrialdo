@@ -3,8 +3,8 @@ package com.orange.data;
 import java.util.Map;
 
 public class CTLinksDO extends CTBaseDO {
-	public String URL="url";
-	public String DESCRIPTION="description";
+	public static final String URL="url";
+	public static final String DESCRIPTION="description";
 	public String url;
 	public String description;
 	
