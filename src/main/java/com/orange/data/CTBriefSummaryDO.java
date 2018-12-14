@@ -6,6 +6,8 @@ import java.util.Map;
 public class CTBriefSummaryDO extends CTBaseDO {
 	public static final String DESCRIPTION = "description";
 	public String description;
+	
+	public String status;// Derived
 	public void deserialize(String[] data) {
 		if(data.length>0)
 			id = data[0];

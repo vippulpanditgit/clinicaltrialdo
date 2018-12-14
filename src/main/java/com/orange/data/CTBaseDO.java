@@ -1,5 +1,7 @@
 package com.orange.data;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -127,5 +129,10 @@ public abstract class CTBaseDO {
 		     }
 		}
 		return String.join("\n", splitSentenceList);
+	}
+	public void update(ResultSet query) throws SQLException {
+		id = query.getString(ID);
+		this.nct_Id = query.getString(NCT_ID);
+		
 	}
 }
