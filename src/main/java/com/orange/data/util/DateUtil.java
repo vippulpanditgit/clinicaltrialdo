@@ -12,6 +12,8 @@ public class DateUtil {
 		// Create an instance of SimpleDateFormat used for formatting 
 		// the string representation of date (month/day/year)
 		DateFormat df = new SimpleDateFormat(DATE_FORMAT);
+		if(date==null)
+			return df.format(new Date());
 
 		// Get the date today using Calendar object.
 		Date today = Calendar.getInstance().getTime();        
@@ -20,14 +22,18 @@ public class DateUtil {
 		return(df.format(date));
 
 	}
-	public static Date convert(String date) throws ParseException {
+	public static Date convert(String date) {
 		// Create an instance of SimpleDateFormat used for formatting 
 		// the string representation of date (month/day/year)
 		DateFormat df = new SimpleDateFormat(DATE_FORMAT);
 
 		// Using DateFormat format method we can create a string 
 		// representation of a date with the defined format.
-		return(df.parse(date));
+		try {
+			return(df.parse(date));
+		} catch (ParseException e) {
+			return new Date();
+		}
 		
 	}
 
