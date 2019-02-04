@@ -31,7 +31,6 @@ public class Zip2LocationDO {
 	public String totalWages;
 	public String notes;
 	public void deserialize(String[] data) {
-		System.out.println(data[0]+" "+data[6]);
 		int index= 0;
 		if(data.length>1)
 			zipcode = data[1];
